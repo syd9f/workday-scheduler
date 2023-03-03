@@ -10,31 +10,34 @@ $(function () {
   // useful when saving the description in local storage?
   // 
   
-  // // select save button for each element
-  // var saveButton = $('#hour-9').children('.saveButton');
+  // // // select save button for each element
+  // var saveButton = $('#hour-9').children('.saveBtn').eq(2);
 
-  // saveButton.addEventListener('click', saveButton);
   // // select user input
-  // var contentNine = $('.nineAm-text').textValue;
-  // var contentTen = $('.tenAm-text').textValue;
-  // var contentEleven = $('.elevenAm-text').textValue;
-  // var contentTwelve = $('.twelvePm-text').textValue;
-  // var contentOne = $('.onePm-text').textValue;
-  // var contentTwo = $('.twoPm-text').textValue;
-  // var contentThree = $('.threePm-text').textValue;
-  // var contentFour = $('.fourPm-text').textValue;
-  // var contentFive = $('.fivePm-text').textValue;
+  // var contentNine = $('.nineAm-text')
+  // // var contentTen = $('.tenAm-text').textValue;
+  // // var contentEleven = $('.elevenAm-text').textValue;
+  // // var contentTwelve = $('.twelvePm-text').textValue;
+  // // var contentOne = $('.onePm-text').textValue;
+  // // var contentTwo = $('.twoPm-text').textValue;
+  // // var contentThree = $('.threePm-text').textValue;
+  // // var contentFour = $('.fourPm-text').textValue;
+  // // var contentFive = $('.fivePm-text').textValue;
 
-  // // save to local storage
-  // localStorage.setItem("nineAm", contentNine);
-  // localStorage.setItem("tenAm", contentTen);
-  // localStorage.setItem("elevenAm", contentEleven);
-  // localStorage.setItem("twelvePm", contentTwelve);
-  // localStorage.setItem("onePm", contentOne);
-  // localStorage.setItem("twoPm", contentTwo);
-  // localStorage.setItem("threePm", contentThree);
-  // localStorage.setItem("fourPm", contentFour);
-  // localStorage.setItem("fivePm", contentFive);
+  // // // save to local storage
+  // // localStorage.setItem("nineAm", contentNine);
+  // // localStorage.setItem("tenAm", contentTen);
+  // // localStorage.setItem("elevenAm", contentEleven);
+  // // localStorage.setItem("twelvePm", contentTwelve);
+  // // localStorage.setItem("onePm", contentOne);
+  // // localStorage.setItem("twoPm", contentTwo);
+  // // localStorage.setItem("threePm", contentThree);
+  // // localStorage.setItem("fourPm", contentFour);
+  // // localStorage.setItem("fivePm", contentFive);
+
+  // saveButton.on('click', function () {
+  //   localStorage.setItem("nineAm", contentNine.textValue);
+  // });
 
   // Set color of text boxes
   // 9 AM
@@ -121,7 +124,7 @@ $(function () {
     twelvePm.removeClass('present future');
     twelvePm.addClass('past');
     // set 1PM to past
-    onePm.removeClass('present');
+    onePm.removeClass('present future');
     onePm.addClass('past');
   }
   // 3 PM
@@ -143,10 +146,10 @@ $(function () {
     twelvePm.removeClass('present future');
     twelvePm.addClass('past');
     // set 1PM to past
-    onePm.removeClass('present');
+    onePm.removeClass('present future');
     onePm.addClass('past');
     // set 2PM to past
-    twoPm.removeClass('present');
+    twoPm.removeClass('present future');
     twoPm.addClass('past');
   }
   // 4 PM
@@ -168,13 +171,13 @@ $(function () {
     twelvePm.removeClass('present future');
     twelvePm.addClass('past');
     // set 1PM to past
-    onePm.removeClass('present');
+    onePm.removeClass('present future');
     onePm.addClass('past');
     // set 2PM to past
-    twoPm.removeClass('present');
+    twoPm.removeClass('present future');
     twoPm.addClass('past');
     // set 3PM to past
-    threePm.removeClass('present');
+    threePm.removeClass('present future');
     threePm.addClass('past');
   }
   // 5 PM
@@ -196,18 +199,20 @@ $(function () {
     twelvePm.removeClass('present future');
     twelvePm.addClass('past');
     // set 1PM to past
-    onePm.removeClass('present');
+    onePm.removeClass('present future');
     onePm.addClass('past');
     // set 2PM to past
-    twoPm.removeClass('present');
+    twoPm.removeClass('present future');
     twoPm.addClass('past');
     // set 3PM to past
-    threePm.removeClass('present');
+    threePm.removeClass('present future');
     threePm.addClass('past');
     // set 4PM to past
-    fourPm.removeClass('present');
+    fourPm.removeClass('present future');
     fourPm.addClass('past');
   }
+  // AFTER 5 PM
+
 
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
