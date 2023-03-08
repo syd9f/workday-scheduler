@@ -28,8 +28,25 @@ THEN the saved events persist
 ```
 
 ## Usage
+When visiting the web page, user will see: 
 
+![screenshot of web page](./assets/images/workday-screenshot.png)
+
+When clicking into the boxes for each hour, user can input text to save on button click, which will remain when the page is refreshed:
+
+![screenshot of page with user input](./assets/images/workday-example.png)
+
+The color of the text boxes will change based on time of day.
+```
+Green: Future events
+Red: Current events
+Gray: Past events
+```
+
+![screenshot of page at 12PM](./assets/images/workday-colors.png)
 
 ## Credits
+```
 Columbia Engineering Coding Bootcamp: Source Code
-Worked on event storage with Tutor - Geronimo Perez
+Worked on event storage with tutor - Geronimo Perez
+```
