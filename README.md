@@ -28,6 +28,10 @@ THEN the saved events persist
 ```
 
 ## Usage
+
+Deployed Page:
+https://syd9f.github.io/workday-scheduler/
+
 When visiting the web page, user will see: 
 
 ![screenshot of web page](./assets/images/workday-screenshot.png)
